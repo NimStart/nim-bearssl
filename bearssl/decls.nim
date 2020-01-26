@@ -8,28 +8,28 @@
 ## those terms.
 ## This module implements interface with BearSSL library sources.
 import strutils
-from os import DirSep
+from os import AltSep
 
 const
-  bearPath = currentSourcePath.rsplit(DirSep, 1)[0] & DirSep &
-             "csources" & DirSep
+  bearPath = currentSourcePath.rsplit(AltSep, 1)[0] & AltSep &
+             "csources" & AltSep
 
   bearSrcPath = bearPath & "src"
   bearIncPath = bearPath & "inc"
-  bearIntPath = bearSrcPath & DirSep & "int" & DirSep
-  bearCodecPath = bearSrcPath & DirSep & "codec" & DirSep
-  bearRandPath = bearSrcPath & DirSep & "rand" & DirSep
-  bearRsaPath = bearSrcPath & DirSep & "rsa" & DirSep
-  bearEcPath = bearSrcPath & DirSep & "ec" & DirSep
-  bearX509Path = bearSrcPath & DirSep & "x509" & DirSep
-  bearSslPath = bearSrcPath & DirSep & "ssl" & DirSep
-  bearMacPath = bearSrcPath & DirSep & "mac" & DirSep
-  bearKdfPath = bearSrcPath & DirSep & "kdf" & DirSep
-  bearHashPath = bearSrcPath & DirSep & "hash" & DirSep
-  bearSymcPath = bearSrcPath & DirSep & "symcipher" & DirSep
-  bearAeadPath = bearSrcPath & DirSep & "aead" & DirSep
-  bearToolsPath = bearPath & "tools" & DirSep
-  bearRootPath = bearSrcPath & DirSep
+  bearIntPath = bearSrcPath & AltSep & "int" & AltSep
+  bearCodecPath = bearSrcPath & AltSep & "codec" & AltSep
+  bearRandPath = bearSrcPath & AltSep & "rand" & AltSep
+  bearRsaPath = bearSrcPath & AltSep & "rsa" & AltSep
+  bearEcPath = bearSrcPath & AltSep & "ec" & AltSep
+  bearX509Path = bearSrcPath & AltSep & "x509" & AltSep
+  bearSslPath = bearSrcPath & AltSep & "ssl" & AltSep
+  bearMacPath = bearSrcPath & AltSep & "mac" & AltSep
+  bearKdfPath = bearSrcPath & AltSep & "kdf" & AltSep
+  bearHashPath = bearSrcPath & AltSep & "hash" & AltSep
+  bearSymcPath = bearSrcPath & AltSep & "symcipher" & AltSep
+  bearAeadPath = bearSrcPath & AltSep & "aead" & AltSep
+  bearToolsPath = bearPath & "tools" & AltSep
+  bearRootPath = bearSrcPath & AltSep
 
 {.passC: "-I" & bearSrcPath}
 {.passC: "-I" & bearIncPath}

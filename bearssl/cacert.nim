@@ -13,9 +13,9 @@
 ## And converted to C header using ``brssl ta cacert cacert-2019-08-28.pem``.
 from decls import X509TrustAnchor
 from strutils import rsplit
-from os import DirSep
+from os import AltSep
 
-const CurrentPath = currentSourcePath.rsplit(DirSep, 1)[0]
+const CurrentPath = currentSourcePath.rsplit(AltSep, 1)[0]
 
 {.passC: "-I" & CurrentPath & DirSep & "certs".}
 

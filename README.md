@@ -6,13 +6,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[BearSSL](https://bearssl.org/) wrapper.
+[BearSSL](https://bearssl.org/) wrapper. Forked from status-im/nim-bearssl and now works even when cross-compiling for windows on linux.
 
 ## Installation
 
 You can install the developement version of the library through nimble with the following command
 ```
-nimble install bearssl
+nimble install https://github.com/NimStart/nim-bearssl
 ```
 
 ## License
